@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Referral — HAH | A Home Away From Home</title>
+<meta name="description" content="Refer a child for short-term respite care at HAH. A simple process for social workers, agencies, and foster families in North Carolina.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="referral">
+
+<div class="page-hero">
+  <div class="container reveal in">
+    <span class="eyebrow">Referral</span>
+    <h1>Refer a child. We'll take it <span class="accent-i">from here.</span></h1>
+    <p class="lede">
+      Designed for social workers, agencies, and foster families — our referral
+      process is quick, and every submission gets a same-day response.
+    </p>
+  </div>
+</div>
+
+<!-- ===== Process ===== -->
+<section aria-labelledby="process-title">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">The Process</span>
+      <h2 id="process-title">Four simple steps</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><h3>Submit the Form</h3><p>Complete the referral form below with the child's basic information and placement needs.</p></div>
+      <div class="step reveal"><h3>Same-Day Response</h3><p>Our team reviews availability and reaches out to confirm details with your agency.</p></div>
+      <div class="step reveal"><h3>Intake &amp; Arrival</h3><p>We coordinate transport, paperwork, and a warm welcome — often within 24 hours.</p></div>
+      <div class="step reveal"><h3>Stay Connected</h3><p>You'll receive regular updates throughout the child's stay until transition.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Form ===== -->
+<section style="padding-top:0" aria-labelledby="form-title">
+  <div class="container" style="max-width:860px">
+    <div class="section-head center">
+      <span class="eyebrow">Get Started</span>
+      <h2 id="form-title">Referral form</h2>
+      <p class="lede">Fields marked with * are required. Please do not include sensitive case details here — we'll collect those securely after initial contact.</p>
+    </div>
+    <form class="form-card reveal" data-validate novalidate>
+      <div class="form-grid">
+        <div class="field">
+          <label for="ref-name">Your Name *</label>
+          <input id="ref-name" name="name" type="text" required autocomplete="name">
+          <span class="error-msg">Please enter your name.</span>
+        </div>
+        <div class="field">
+          <label for="ref-org">Agency / Organization *</label>
+          <input id="ref-org" name="organization" type="text" required autocomplete="organization">
+          <span class="error-msg">Please enter your agency or organization.</span>
+        </div>
+        <div class="field">
+          <label for="ref-email">Email *</label>
+          <input id="ref-email" name="email" type="email" required autocomplete="email">
+          <span class="error-msg">Please enter a valid email address.</span>
+        </div>
+        <div class="field">
+          <label for="ref-phone">Phone *</label>
+          <input id="ref-phone" name="phone" type="tel" required autocomplete="tel">
+          <span class="error-msg">Please enter a phone number.</span>
+        </div>
+        <div class="field">
+          <label for="ref-role">Your Role *</label>
+          <select id="ref-role" name="role" required>
+            <option value="">Select one…</option>
+            <option>Social Worker / Case Manager</option>
+            <option>County DSS Staff</option>
+            <option>Foster Parent</option>
+            <option>Agency Partner</option>
+            <option>Other</option>
+          </select>
+          <span class="error-msg">Please select your role.</span>
+        </div>
+        <div class="field">
+          <label for="ref-urgency">Placement Urgency *</label>
+          <select id="ref-urgency" name="urgency" required>
+            <option value="">Select one…</option>
+            <option>Emergency (within 24 hours)</option>
+            <option>Within this week</option>
+            <option>Planned / scheduled respite</option>
+          </select>
+          <span class="error-msg">Please select the urgency.</span>
+        </div>
+        <div class="field">
+          <label for="ref-age">Child's Age Range</label>
+          <select id="ref-age" name="age">
+            <option value="">Select one…</option>
+            <option>0–5</option>
+            <option>6–10</option>
+            <option>11–14</option>
+            <option>15–17</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="ref-county">County</label>
+          <input id="ref-county" name="county" type="text" placeholder="e.g., Iredell">
+        </div>
+        <div class="field full">
+          <label for="ref-notes">Additional Details</label>
+          <textarea id="ref-notes" name="notes" placeholder="Anything that helps us prepare — expected length of stay, school needs, etc. Please avoid confidential case information."></textarea>
+        </div>
+      </div>
+      <div style="margin-top:1.6rem;display:flex;align-items:center;gap:1rem;flex-wrap:wrap">
+        <button type="submit" class="btn btn-orange">Submit Referral</button>
+        <span class="form-note">We respond to every referral the same day.</span>
+      </div>
+      <p class="form-success" role="status" tabindex="-1">
+        ✓ Thank you — your referral has been received. Our team will contact you shortly.
+      </p>
+    </form>
+  </div>
+</section>
+
+<!-- ===== Urgent note ===== -->
+<section style="padding-top:0">
+  <div class="container">
+    <div class="quote-banner reveal">
+      <div class="quote-house" style="color:#fff">
+        <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M32 8v28"/><circle cx="32" cy="48" r="3" fill="currentColor" stroke="none"/><path d="M12 56h40L32 6z" stroke-width="0" fill="none"/><circle cx="32" cy="32" r="26"/></svg>
+      </div>
+      <div>
+        <blockquote>Emergency placement needed <em>right now</em>? Call us directly — a team member answers day and night.</blockquote>
+        <cite><a href="contact.html" style="color:var(--orange-soft)">See contact options →</a></cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>
